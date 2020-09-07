@@ -20,26 +20,27 @@
   let AlunosDeQuinda = [10, 5, 20, -15, 5];
   let AlunosDeSexta = [10, 5, 20, 15, 5];
 
-  function aberturas() {
-    for (let DiasDeAula = 25; DiasDeAula > 0; DiasDeAula--) {
-      var aleatorio = parseInt(Math.random() * 20) - 10
-      aulas.push()
-    }
-  }
-
-  aberturas()
-
-
+  let AulasAconteceu = [];
+  let AulasNaoAconteceu = [];
 
   function Acontece(DiaDeAula, QtAlunosSuficiente) {
     this.DiaDeAula = DiaDeAula,
       this.QtAlunosSuficiente = QtAlunosSuficiente
-    if (DiaDeAula >= QtAlunosSuficiente) {
-      return true;
-    } else {
-      return false;
+      DiaDeAula.forEach((index, valor, array) =>{
+        if(valor >= QtAlunosSuficiente) {
+      // console.log(true)
+      AulasAconteceu.push(true)
+    } else{
+      // console.log(false);
+      AulasNaoAconteceu.push(false)
     }
+    });
   };
+
+  Acontece(AlunosDeSegunda, 2)
+
+ 
+
 
 
 
