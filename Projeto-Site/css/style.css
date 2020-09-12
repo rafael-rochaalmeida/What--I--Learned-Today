@@ -21,13 +21,14 @@ body{
     background:#000;
     color: #ffff;
     text-transform: uppercase;
-    grid-template-columns: 150px 1fr 100px 200px;
+    grid-template-columns: 150px 1fr 300px 200px;
     justify-items: center;
     align-items: center;
     height: 3.1rem;
     font-size: 1.0rem;
    font-family: Ubisoft Sans,sans-serif; 
    font-weight: 700;
+   position: relative;
 }  
 
 
@@ -47,7 +48,7 @@ body{
 
 .box-login{
 cursor: pointer;
-display: -ms-inline-grid;
+/* display: -ms-inline-grid; */
 }
 
 .header img{
@@ -65,6 +66,85 @@ display: -ms-inline-grid;
     align-items: center; 
     justify-items: center; 
 }
+
+/* INICIO PESQUISAR */
+
+    
+
+
+
+.box-pesquisar{
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%); */
+    background: #fff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-pesquisar{
+    color: #000;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    transition: 0.4s;
+    text-decoration: none !important;
+  }
+  
+  .icon-pesquisar{
+    width: 0;
+    height: 0;
+    margin-top: 27%;
+    margin-left: 28%;
+    display: flex;
+    /* justify-content: center !important;
+    align-items: center !important; */
+   }
+  
+  
+  .box-pesquisar:hover > .pesquisar-txt{
+    width: 240px;
+    padding: 0 6px;
+  
+  }
+  .box-pesquisar:hover  > .btn-pesquisar{
+    background: #000;
+    color: #fff;
+  }
+  
+  .pesquisar-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #000;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* FIM PESQUISAR */
+
+
 
 /* FIM HEADER  */
 
@@ -174,8 +254,6 @@ grid-template-rows: 20Vh 80Vh;
 justify-items: center;
 align-items: center;
 position: relative;
-
-
 }
 .img-ubisoft-store{
     width: 30Vw;
@@ -312,13 +390,44 @@ position: relative;
 }
 
 .video-youtube{
-    width:420px;
-    height:280px;
+    width:450px;
+    height:300px;
 }
 
 .legenda-video{
-    font-weight: bold;
-    font-size: 1.25rem;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.50rem;
+    letter-spacing: 2px;
+}
+
+.container-video{
+    display: grid;
+    align-items: center;
+    
+
+}
+.ver-todos-videos{
+text-align: center;
+grid-column: span 3;
+font-weight: 500;
+font-size: 1rem;
+text-transform: uppercase;
+align-items: center;
+justify-items: center;
+display: grid;
+background: #e12178;
+height: 50px;
+width: 300px;
+padding: 10px px; 
+color: #000;
+border-radius: 50px;
+} 
+
+.ver-todos-videos span{
+    color: #fff;
+    padding: 0px 20px;
+   
 }
 /* <!-- FIM UBISOFT INSIDE --> */
 

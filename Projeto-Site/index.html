@@ -10,26 +10,38 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/735b99cfec.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <!-- INICIO HEADER -->
     <div class="header">
         <div class="img-log-header">
             <img src="css/img/logo-ubisoft.webp" alt="">
         </div>
         <ul class="nav">
-
             <li><a href="#">Loja</a></li>
             <li><a href="#">Mais Jogos</a></li>
             <li><a href="#">Fóruns</a></li>
             <li><a href="#">Suporte</a></li>
         </ul>
-        <button class="btn-pesquisar"><span class="span-pesquisar">Procurar</span></button>
+
+  <div class="box-pesquisar">
+    <input class="pesquisar-txt" type="text" name="" placeholder="Pesquisar" id="">
+    <a class="btn-pesquisar" href="#">
+      <i class="fas fa-search icon-pesquisar"></i>
+    </a>
+    </div>
+
         <div class="box-login">
             <i class="fas fa-user"></i>
             <span class="login-btn">Entrar</span>
         </div>
-    </div>
+
+       </div>
+           <!-- FIM HEADER -->
+
     <!-- INICIO GRID CONTAINERS -->
     <div class="container-carousel">
         <!-- INICIO DO CARROSEL -->
@@ -257,24 +269,23 @@
                     <div class="background-ubisoft-store">
                         <div class="containers-ubisoft-store">
                             <span class="title-ubisoft-store">trailers do momento</span>
-                            <div>
+                            <div class="container-video">
                             <iframe class="video-youtube" src="https://www.youtube.com/embed/3h3iNxIYWlM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <div class="legenda-video">Rainbon Six: Siege: Operação  Steel Wave</div>
                         </div>
 
-                        <div>
+                        <div class="container-video">
                             <iframe class="video-youtube" src="https://www.youtube.com/embed/L0Fr3cS3MtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <div class="legenda-video">Assassin's Creed Valhalla: Trailer de estreia mundial</div>
                         </div>
 
-                        <div>
+                        <div class="container-video">
                             <iframe class="video-youtube" src="https://www.youtube.com/embed/jqhAjLsus6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <div class="legenda-video">Rabbibs Coding: Lições gratuitas através da resolução de quebra-cabeças</div>
                         </div>
+                        <div class="ver-todos-videos"><span>ver todos os videos</span></div>
                         </div>
                     </div>
-
-
 
                     <!-- FIM TRAILERS DO MOMENTO -->
 
@@ -287,3 +298,14 @@
 </body>
 
 </html>
+
+
+<script>
+
+
+
+// function(){
+//     alert(div_mensagem.value)
+// }
+
+</script>
