@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    ## Desafio - Produto
+
+    Necessitamos uma função `produto` que receba um array de números e retorne o _produto_: o resultado 
+    de multiplicar todos os elementos entre si.
+    
+    Por exemplo, `produto([1, 4, 7])` deve retornar `28`, que é `1 * 4 * 7`.
+    
+    > Escreva a função produto
+</body>
+</html>
+<script>
+function produto(ArrayProdutos){
+  let resultado = ArrayProdutos.reduce((acumulador, itemAtual)=>{
+   return acumulador * itemAtual;
+   });
+ return resultado;
+};
+console.log(produto([1, 4, 7]));
+
+</script>
