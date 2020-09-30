@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../plugins/bootstrap-4.5.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../plugins/fontawesome-free-5.14.0-web/css/all.min.css">
+    <script src="../plugins/bootstrap-4.5.2-dist/js/jquery-3.5.1.slim.min.js"></script>
     <title></title>
 </head>
 
@@ -56,12 +57,25 @@
                 <a href="../index.html">Logout <i class="fas fa-sign-out-alt"></i></a>
             </header>
             <div class="main-content">
-             <p>dashboard</p>
+                <div class="main-content-title"><h2>Gerenciar Alimentos</h2></div>
+                <div class="panel-row">
+                    <button class="panel panel-50" a-view="cadastrar-alimentos" onclick="fetchContent(this)" a-folder="alimentos">
+                        <i class="fas fa-plus-circle"></i>
+                        Cadastrar Peso
+                    </button>
+                    <button class="panel panel-50" a-view="visualizar-alimentos" onclick="fetchContent(this)" a-folder="alimentos">
+                        <i class="fas fa-border-all"></i>
+                        Visualizar Peso
+                    </button>
+                </div>
+                <div class="content" id="ajax-content"></div>
             </div>
         </main>
     </div>
     <script src="../plugins/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
     <script src="../plugins/fontawesome-free-5.14.0-web/js/all.min.js"></script>
+    <script src="../js/ajax.js"></script>
+
 </body>
 
 </html>

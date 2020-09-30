@@ -26,7 +26,7 @@
                     </li>
                     <li>
                         <i class="fas fa-user-circle"></i>
-                        <a href="#">Perfil </a>
+                        <a href="perfil.html">Perfil </a>
                     </li>
                     <li>
                         <i class="fas fa-weight"></i>
@@ -34,19 +34,19 @@
                     </li>
                     <li>
                         <i class="fas fa-heartbeat"></i>
-                        <a href="#">Gerenciar Pressão Arterial </a>
+                        <a href="gerenciar-pressao.html">Gerenciar Pressão Arterial </a>
                     </li>
                     <li>
                         <i class="fas fa-dumbbell"></i>
-                        <a href="#"> Gerenciar Atividades Físicas </a>
+                        <a href="gerenciar-atividades.html"> Gerenciar Atividades Físicas </a>
                     </li>
                     <li>
                         <i class="fas fa-utensils"></i>
-                        <a href="#">Gerenciar Alimentos</a>
+                        <a href="gerenciar-alimentos.html">Gerenciar Alimentos</a>
                     </li>
                     <li>
                         <i class="fas fa-calculator"></i>
-                        <a href="#">Cálculo de IMC</a>
+                        <a href="calcular-imc.html">Cálculo de IMC</a>
                     </li>
                 </ul>
             </div>
@@ -57,20 +57,26 @@
                 <a href="../index.html">Logout <i class="fas fa-sign-out-alt"></i></a>
             </header>
             <div class="main-content">
+                <div class="main-content-title"><h2>Gerenciar Peso e Altura</h2></div>
                 <div class="panel-row">
-                    <button class="panel panel-50" a-view="cadastrarPeso" onclick="fetchContent(this)" a-folder="peso">Cadastrar Peso</button>
-                    <button class="panel panel-50" a-view="visualizarPeso" onclick="fetchContent(this)" a-folder="peso">Visualizar Peso</button>
+                    <button class="panel panel-50" a-view="cadastrarPeso" onclick="fetchContent(this)" a-folder="peso">
+                        <i class="fas fa-plus-circle"></i>
+                        Cadastrar Peso
+                    </button>
+                    <button class="panel panel-50" a-view="visualizarPeso" onclick="fetchContent(this)" a-folder="peso">
+                        <i class="fas fa-plus-circle"></i>
+                        <i class="fas fa-border-all"></i>
+                        Visualizar Peso
+                    </button>
                 </div>
-                <div class="content" id="ajax-content">
-        
-                </div>
+                <div class="content" id="ajax-content"></div>
             </div>
         </main>
     </div>
-    <script src="../js/ajax.js"></script>
     <script src="../plugins/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
     <script src="../plugins/fontawesome-free-5.14.0-web/js/all.min.js"></script>
-    
+    <script src="../js/ajax.js"></script>
+
 </body>
 
 </html>

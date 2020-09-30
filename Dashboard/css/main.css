@@ -43,6 +43,11 @@ main .main-content{
     transition: 0.2s;
 }
 
+.panel-row button svg{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
 .panel-row button:hover{
     transform: scale(1.05);
     transition: 0.2s;
@@ -50,9 +55,9 @@ main .main-content{
 
 #ajax-content{
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 20px;
-    padding: 20px;
+    /* padding: 20px; */
     background: #fff;
     box-shadow: 0 0 2rem rgba(0,0,0, 0.2);
 }
@@ -65,4 +70,29 @@ main .main-content{
 #ajax-content button:hover{
     transform: scale(1.05);
     transition: 0.2s;
+}
+
+#ajax-content label{
+    font-size: 14px;
+    color: #72777a;
+}
+
+#ajax-content table svg{
+  cursor: pointer;
+  color: #72777a;
+}
+
+.dynamic-content{
+    padding: 20px;
+}
+
+.main-content-title{
+     padding: 5px 0;
+}
+
+.main-content-title h2{
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 300;
+    color: #72777a;
 }
