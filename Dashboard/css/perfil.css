@@ -49,6 +49,12 @@ margin-top: 5px;
     height: 500px;
     width: 400px;
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    background-image: url(../images/img-perfil.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+    border: 1px solid #a777e3;
 }
 
 .perfil-form button{

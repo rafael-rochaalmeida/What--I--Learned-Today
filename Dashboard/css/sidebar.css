@@ -58,3 +58,11 @@
     text-decoration: none;
 }
 
+.selected{
+    background: #d1d1d1;
+   
+}
+
+.selected a{
+    color: #000 !important;
+}
