@@ -9,45 +9,31 @@
 
 .container-carousel{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-
-}
-.text-container{
-    font-size: 20px;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px px;
-    width: 100%;
-    height: 300px;
-    color: #fff;
-   
-}
-
-.text-container h1{
-    text-transform: uppercase;
-}
-
-.text-container p{
-    width: 700px;
-}
-.carousel .container-carousel img{
- padding: 0;
- margin: 0;
- width: 700px;
- height: 600px;
-}
-.container-img-avatar{
-    display: flex;
     justify-content: center;
-    align-items: flex-end; 
-    width: 1400px;
     height: 100%;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
 }
+
+.container-carousel h1{
+    text-transform: uppercase;
+    font-size: 90px !important;
+}
+
+.container-carousel div{
+    /* background: red; */
+    width: 150px;
+    height: 30px;
+}
+
+.container-carousel div p{
+font-size: 25px;
+}
+
+
 /* FIM CAROUSEL PRINCIPAL  */
 
 /* INICIO CAROUSEL PARTIDAS DA RODADA */
@@ -56,8 +42,17 @@
  flex-direction: column; 
   align-items: center; 
  width: 100%;
- height: 600px;
+ /* height: 600px; */
 }
+.container-video video{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+  }
+  /* .container-video {
+      width: 100%;
+      height: 1000px;
+  } */
 
 .container-rodadas h1{
 font-weight: 700;
@@ -67,30 +62,43 @@ font-weight: 700;
  color: #2f3542; 
 }
 
-.container-rodadas .carousel-rodadas{
+.carousel-rodadas{
  display: flex; 
  justify-content: center; 
- height: 340px;
+ /* height: 340px; */
  width: 100%;
 }
-
-.container-rodadas img{
-    width: 350px;
+.card-rodadas img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+.card-rodadas{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    border: solid 0.1px #fff;
+    width: 378px; 
     height: 230px;
 }
-
-.container-rodadas .card-rodadas{
-    margin: 0% 1%;
-    width: 365px; 
-    height: 300px;
+.card-rodadas img:hover{ 
+transform: scale(1.1);
+/* opacity: 0; */
 }
 
-.container-rodadas .card-rodadas p{
-    font-size: 20px;
-    font-weight: 700;
-    width: 100%;
-    color: #2f3542;
+.text-item {
+    position: absolute;
+    font-weight: 800;
+
 }
+
+.text-item h2{
+    color: #fff;
+}
+
+
 .btn-padrao{
     text-transform: uppercase;
     cursor: pointer;
@@ -124,7 +132,7 @@ color: #0984e3;
     height: 200px;
     align-items: center;
     color:#2f3542;
-    background:rgba(241, 242, 246,1.0);
+    /* background:rgba(241, 242, 246,1.0); */
 }
 
  .times-noticias{
@@ -136,7 +144,7 @@ color: #0984e3;
 .container-noticias h1{
     font-size: 40px;
     text-transform: uppercase;
-    color: #0984e3;
+    color: #000;
 }
 
 .container-noticias .times-noticias li{
@@ -151,7 +159,7 @@ color: #0984e3;
 .container-noticias .times-noticias li a{
   font-size: 20px;
   text-decoration: none;
-  color: #0984e3;
+  color: #000;
 }
 
 .container-cards-noticias{
@@ -165,7 +173,7 @@ color: #0984e3;
     grid-template-rows: repeat(7, 100px);
     background-repeat: no-repeat;
     background-size: cover;
-    background:rgba(241, 242, 246,1.0);
+    /* background:rgba(241, 242, 246,1.0); */
 
 }
 .container-cards-noticias span{
@@ -220,27 +228,40 @@ color: #0984e3;
  margin-bottom: 2%;
  width: 100%;
  height: 520px;
- background-repeat: no-repeat;
- background-size: cover;
+ background:rgba(241, 242, 246,1.0);
 }
 
 .container-cadastro form{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* background: red; */
+    flex-direction: row; 
+     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 450px;
-    background: rgba(0,0,5,0.8);
+
+     /* width: 1000px;
+     height: 40px; */
 }
 
 .container-cadastro form input{
-    width: 300px;
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+    color: #fff;
+    background: #000;
+    border: #fff 1px solid;
+    padding: 10px;
+}
+
+.container-cadastro input::placeholder{
+    color: #ffffff;
+    font-weight: 600;
+
+   /* text-align: center; */
 }
 
 .container-cadastro form label{
     margin: 10px 0 0 0;
-    color: #0984e3;
+    color: #fff;
     font-size: 18px;
     font-weight: 600;
 }
@@ -249,15 +270,24 @@ color: #0984e3;
     color: #fff;
     padding: 0;
 }
-
 .container-cadastro form button{
-    margin: 13px;
     font-size: 14px;
-    border-radius: 5px;
+    border-radius: 20px;
     font-weight: 500;
     width: 200px;
-    height: 30px;
+    height: 40px;
 }
+
+.btn-cadastrar{
+ background: #fff;
+ cursor: pointer;
+}
+
+.btn-cadastrar::hover{
+ background: #000 !important;
+}
+
+
 
 /* .container-cadastro div{
     display: flex;

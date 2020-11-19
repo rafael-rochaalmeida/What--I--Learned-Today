@@ -1,19 +1,17 @@
 .header{
     display: flex;
     width: 100%;
-    background: rgba(7,7,7,0.200);
+    background: rgba(7,7,7,0.97);
     height: 60px;
-    position: fixed;
     align-items: center;
     transition: 500ms;
     /* border-bottom: #0d64ab 2px solid; */
 }
 
-.header:hover{
+/* .header:hover{
   transition: 500ms;
-  color: ;
   background: rgba(7,7,7,0.97);
-}
+} */
 
 .header .nav{
     display: flex;
