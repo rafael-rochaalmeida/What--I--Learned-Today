@@ -5,13 +5,10 @@
     height: 60px;
     align-items: center;
     transition: 500ms;
-    /* border-bottom: #0d64ab 2px solid; */
+
 }
 
-/* .header:hover{
-  transition: 500ms;
-  background: rgba(7,7,7,0.97);
-} */
+
 
 .header .nav{
     display: flex;
@@ -39,8 +36,8 @@ padding: 0 5px;
 
 .header .nav a:hover{
   transition: 500ms;
-  background: #0d64ab;
-  color: #fff;
+  background: #fff;
+  color: rgba(45, 52, 54,0.900);
 }
 
 .header a{
@@ -70,7 +67,7 @@ padding: 0 5px;
 
   .header .login a:hover{
     transition: 500ms;
-    color: rgba(45, 52, 54,0.900);
+    color: #636e72;
   }
 
   .header .login i{

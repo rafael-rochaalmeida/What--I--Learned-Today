@@ -23,18 +23,62 @@
         </div>
     </div>
     <!-- /* INICIO CAROUSEL PRINCIPAL  */ -->
-    <div class="carousel">
-
-        <div class="container-carousel">
+       <!--image slider start-->
+    <div class="slider">
+        <!-- slides start -->
+        <div class="slides">  
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="img/1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/3.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/4.jpg" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+         <!-- slides start -->
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+        
+        <div class="container-slider2">
             <div>
                 <p>
                     Sport - 2020
                 </p>
             </div>
             <h1>Titulo do site</h1>
-
         </div>
+
     </div>
+</div>
     <!-- /* FIM CAROUSEL PRINCIPAL  */ -->
 
     <!-- INICIO CONTENTE HOME -->
@@ -70,11 +114,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <button class="btn-padrao">
-                Saiba Mais
-            </button> -->
-
         </div>
         <div class="container-video">
             <video autoplay muted src="img/production ID_4440941.mp4"></video>
@@ -109,26 +148,12 @@
         <!--INICIO CONTAINER CADASTRO -->
 
         <div class="container-cadastro">
-            <!-- <div class="box-titulo">
-                <h1>Cadasra-se</h1>
-            </div> -->
+
             <div class="box-cadastro">
-                <!-- <img src="img/img21.svg" alt=""> -->
                 <form action="">
-                    <!-- <h1>Jogador Nato</h1> -->
-                    <!-- <label for="nome_us">Nome Completo</label> -->
                     <input placeholder="Nome" id="nome_us" type="text">
-                    <!-- <label for="email_us">Email</label> -->
                     <input placeholder="Email" id="email_us" type="email">
-                    <!-- <label for="sexo-us">Sexo</label> -->
-                    <!-- <select id="sexo-us">
-                        <option>--Selecione--</option>
-                        <option value="m">Masculino</option>
-                        <option value="f">Feminino</option>
-                    </select> -->
-                    <!-- <label for="senha_us">Senha</label> -->
                     <input placeholder="Senha" id="senha_us" type="password">
-                    <!-- <label for="confirma_senha">Confirmação de Senha</label> -->
                     <input placeholder="Confimação de Senha" class="input-senha" id="confirma_senha" type="password">
                     <button type="button" class="btn-cadastrar">Cadastrar</button>
                 </form>
@@ -150,3 +175,14 @@
 </body>
 
 </html>
+
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
