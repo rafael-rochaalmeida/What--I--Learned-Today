@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+    /* width: 100%; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #23E3C9;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    background: red;
+    overflow: hidden;
+    image-rendering: ;
+}
+
+.slides{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}

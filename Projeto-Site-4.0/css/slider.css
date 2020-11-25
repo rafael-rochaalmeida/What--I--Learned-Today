@@ -1,28 +1,24 @@
-body{
-  /* margin: 0;
-  padding: 0;*/
-  /* height: 100vh;  */
-  /* display: flex;
+.container-slider{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh; 
+  display: flex;
   justify-content: center;
   align-items: center;
-  background: #23E3C9; */
 }
 
 .slider{
   width: 100%;
-  height: 500px;
-  /* border-radius: 10px; */
+  height: 100%;
+  border-radius: 10px;
   overflow: hidden;
-  /* display: flex; */
 }
 
 .slides{
-  width: 100%;
-  height: 100%;
+  width: 500%;
+  height: 500px;
   display: flex;
-  /* justify-content: center;
-  align-items: center;
-  background: red; */
 }
 
 .slides input{
@@ -30,27 +26,13 @@ body{
 }
 
 .slide{
-  width: 100%;
-  height: 100%;
+  width: 20%;
   transition: 2s;
 }
 
-#radio1:checked ~ .first img{
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-#radio2:checked ~ .first img{
-  width: 100%;
-  height: 100%;
-}
-#radio3:checked ~ .first img{
-  width: 100%;
-  height: 100%;
-}
-#radio4:checked ~ .first img{
-  width: 100%;
-  height: 100%;
+.slide img{
+  width: 800px;
+  height: 500px;
 }
 
 /*css for manual slide navigation*/
