@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <span><a href="index.html"> Jogador Nato</a></span>
+        </div>
+        <div class="nav">
+            <a href="index.html"> <i class="fas fa-home"></i>home</a>
+            <a href="loja.html"> <i class="fas fa-store"></i>loja</a>
+        </div>
+        <div href="#" class="login">
+            <a href="login.html"> <i class="fas fa-user-circle"></i>login</a>
+        </div>
+    </div>
+    <div class="container-loja">
+        <div class="card-loja">
+            <img src="img/camisa1.jpg">
+            <span>
+                Camisa Palmeiras 20/21 s/n°
+                Torcedor Puma Masculino
+            </span>
+            <span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </span>
+            <span class="text-frete">
+                frete grátis
+            </span>
+
+            <span class="valor-camisa">
+                R$ <span id="id_valor_camisa1">200</span>
+            </span>
+            <span>
+                <input placeholder="inserir cupom" id="inp_palmeiras1">
+            </span>
+            <span>
+                <button onclick="descontoPalmeiras()">calcular desconto</button>
+            </span>
+        </div>
+        <div class="card-loja">
+            <img src="img/camisa2.jpg">
+            <span>
+                Camisa Palmeiras 20/21 s/n°
+                Torcedor Puma Masculino
+            </span>
+            <span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </span>
+            <span class="text-frete">
+                frete grátis
+            </span>
+            <span class="valor-camisa">
+                R$ <span id="id_valor_camisa">249</span>,00
+            </span>
+            <span>
+                <input placeholder="inserir cupom" id="inp_palmeiras2">
+            </span>
+            <span>
+                <button>calcular desconto</button>
+            </span>
+        </div>
+        <div class="card-loja card-loja3">
+            <img src="img/camisa3.jpg">
+            <span>
+                Camisa Palmeiras 20/21 s/n°
+                Torcedor Puma Masculino
+            </span>
+            <span>
+
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </span>
+            <span class="text-frete">
+                frete grátis
+            </span>
+
+            <span class="valor-camisa">
+                R$ <span id="id_valor_camisa">199</span>,00
+            </span>
+            <span>
+                <input placeholder="inserir cupom" id="inp_palmeiras3">
+            </span>
+            <span>
+                <button>calcular desconto</button>
+            </span>
+        </div>
+    </div>
+    <div class="container-loja">
+        <div class="card-loja">
+            <img src="img/camisa4.jpg">
+            <span>
+                Camisa São Paulo 20/21 s/n° c/ Patrocínio
+                Torcedor Adidas
+            </span>
+            <span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </span>
+            <span class="text-frete">
+                frete grátis
+            </span>
+
+            <span class="valor-camisa">
+                R$ <span id="id_valor_camisa">199</span>,00
+            </span>
+            <span>
+                <input placeholder="inserir cupom" id="">
+            </span>
+            <span>
+                <button>calcular desconto</button>
+            </span>
+        </div>
+        <div class="card-loja">
+            <img src="img/camisa5.jpg">
+            <span>
+                Camisa São Paulo 20/21 s/n°
+                Torcedor Adidas
+            </span>
+            <span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </span>
+            <span class="text-frete">
+                frete grátis
+            </span>
+            <span class="valor-camisa">
+                R$ <span id="id_valor_camisa">230</span>,00
+            </span>
+            <span>
+                <input placeholder="inserir cupom" id="">
+            </span>
+            <span>
+                <button>calcular desconto</button>
+            </span>
+        </div>
+        <div class="card-loja card-loja3">
+            <img src="img/camisa6.jpg">
+            <span>
+                Camisa São Paulo 20/21 s/n°
+                Torcedor Adidas
+            </span>
+            <span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </span>
+            <span class="text-frete">
+                frete grátis
+            </span>
+
+            <span class="valor-camisa">
+                R$ <span id="id_valor_camisa">199</span>,00
+            </span>
+            <span>
+                <input placeholder="inserir cupom" id="">
+            </span>
+            <span>
+                <button>calcular desconto</button>
+            </span>
+        </div>
+    </div>
+    <div class="container-loja">
+        <div class="card-loja">
+            <img src="img/camisa7.jpg">
+            <span>
+                Camisa Corinthians Silverstone
+                Edição Limitada Masculino
+            </span>
+            <span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </span>
+            <span class="text-frete">
+                frete grátis
+            </span>
+
+            <span class="valor-camisa">
+                R$ <span id="id_valor_camisa">54</span>,00
+            </span>
+            <span>
+                <input placeholder="inserir cupom" id="">
+            </span>
+            <span>
+                <button>calcular desconto</button>
+            </span>
+        </div>
+        <div class="card-loja">
+            <img src="img/camisa8.jpg">
+            <span>
+                Camisa Corinthians 19/20 s/n°
+                Torcedor Nike Masculino
+            </span>
+            <span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </span>
+            <span class="text-frete">
+                frete grátis
+            </span>
+
+            <span class="valor-camisa">
+                R$ <span id="id_valor_camisa">109</span>,00
+            </span>
+            <span>
+                <input placeholder="inserir cupom" id="">
+            </span>
+            <span>
+                <button>calcular desconto</button>
+            </span>
+        </div>
+        <div class="card-loja card-loja3">
+            <img src="img/camisa9.jpg">
+            <span>
+                Camisa Corinthians 20/21 s/n°
+                Torcedor Nike Masculino
+            </span>
+            <span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </span>
+            <span class="text-frete">
+                frete grátis
+            </span>
+            <span class="valor-camisa">
+                R$ <span id="id_valor_camisa">199</span>,00
+            </span>
+            <span>
+                <input placeholder="inserir cupom" id="">
+            </span>
+            <span>
+                <button>calcular desconto</button>
+            </span>
+        </div>
+    </div>
+    <div class="container-redes-sociais">
+        <a class="btn-redes-sociais" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn-redes-sociais" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="btn-redes-sociais" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="btn-redes-sociais" href="#"><i class="fab fa-youtube"></i></a>
+        <a class="btn-redes-sociais" href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+</body>
+
+</html>
+
+<script src="js/desconto.js"></script>
+<script src="js/cupom.js"></script>

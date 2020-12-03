@@ -1,3 +1,44 @@
+<script>
+
+  let AlunosDeSegunda = [10, -5, 20, -15, 5];
+  let AlunosDeTerca = [0, -5, 2, 15, 5];
+  let AlunosDeQuarta = [-10, -5, -20, -15, 5];
+  let AlunosDeQuinda = [10, 5, 20, -15, 5];
+  let AlunosDeSexta = [10, 5, 20, 15, 5];
+
+  let AulasAconteceu = [];
+  let AulasNaoAconteceu = [];
+  let ArrayFinal = []
+
+
+ function Acontece(DiaDeAula, QtAlunosSuficiente){
+        DiaDeAula.forEach((DiaDeAula) =>{
+        if(DiaDeAula >= QtAlunosSuficiente){
+          AulasAconteceu.push(true);
+     } else{
+      AulasNaoAconteceu.push(false);
+     };
+    });
+  };
+  Acontece(AlunosDeSegunda, 2)
+  // console.log(Acontece());
+
+  function Aberturas(ArrayDiaDeAula, QtAlunosSuficiente){
+   ArrayDiaDeAula.forEach((ArrayDiaDeAula) =>{
+     if(ArrayDiaDeAula >= QtAlunosSuficiente){
+      ArrayFinal.push(true);
+     } else{
+      ArrayFinal.push(false);
+     };
+    });
+     return ArrayFinal;
+     };
+     Aberturas(AlunosDeSexta, 1)
+     console.log(ArrayFinal);
+
+
+</script>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,68 +84,3 @@
   ``` -->
 </body>
 </html>
-<script>
-
-  let AlunosDeSegunda = [10, -5, 20, -15, 5];
-  let AlunosDeTerca = [0, -5, 2, 15, 5];
-  let AlunosDeQuarta = [-10, -5, -20, -15, 5];
-  let AlunosDeQuinda = [10, 5, 20, -15, 5];
-  let AlunosDeSexta = [10, 5, 20, 15, 5];
-
-  let AulasAconteceu = [];
-  let AulasNaoAconteceu = [];
-
- function Acontece(DiaDeAula, QtAlunosSuficiente){
-        DiaDeAula.forEach((DiaDeAula) =>{
-        if(DiaDeAula >= QtAlunosSuficiente){
-          AulasAconteceu.push(true);
-     } else{
-      AulasNaoAconteceu.push(false);
-     };
-    });
-  //   if(AulasAconteceu.length >= AulasNaoAconteceu.length){
-  //     AlunosDeSegunda = true;
-  //     return AlunosDeSegunda;
-  // } else{
-  //    AlunosDeSegunda = false;
-  //    return AlunosDeSegunda;
-  // }
-  };
-  console.log(Acontece(AlunosDeQuinda, 6));
-console.log(AulasAconteceu, AulasNaoAconteceu)
-
-
-  function Aberturas(ArrayDiaDeAula, QtAlunosSuficiente){
-    let resultado2 = ArrayDiaDeAula.forEach((ArrayDiaDeAula) =>{
-     if(ArrayDiaDeAula >= QtAlunosSuficiente){
-       return true;
-     } else{
-      return false;
-     };
-    });
-     return resultado2;
-     };
-     console.log()
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // Acontece(AlunosDeSegunda, 1)
-
-
-  // console.log( 'Aula acontece ' + AulasAconteceu + ` aula não acontece ` +  AulasNaoAconteceu);
-
-</script>

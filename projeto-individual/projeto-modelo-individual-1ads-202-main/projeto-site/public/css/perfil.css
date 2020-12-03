@@ -1,0 +1,191 @@
+html, body{
+    /* height: 100%; */
+    /* background: black; */
+}
+
+.container-geral-perfil{
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: gray;
+    background: #fff;
+    border-bottom: gray solid 1px;
+
+}
+
+.container-conteudo-perfil{
+  display: flex;
+}
+
+.container-perfil-time{
+    background: #fff;
+   display: flex;
+   flex-direction: column;
+   width: 200px;
+   height: 100%;
+   border-right: gray solid 1px;
+}
+
+.card-perfil{
+    width: 99%;
+    height: 145px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    border-bottom: gray solid 1px;
+}
+
+.card-perfil img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.container-opoces-perfil{
+    height:584px;
+    width: 100%;
+    background: #f5f5f5;
+}
+
+
+
+.container-padrao2{
+display: flex;
+width: 100%;
+height: 100%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.sumir{
+    display: none !important;
+}
+
+.container-opoces-perfil h1{
+    color: gray;
+}
+.container-padrao{ 
+    width: 90%;
+    height: 450px;
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+.lista-padrao{
+    height: 420px;
+    width: 700px;
+    font-size: 20px;
+    /* background: red; */
+}
+
+.lista-padrao li{
+    margin: 20px 0;
+}
+
+.lista-padrao li span{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-padrao button{
+    background: #2980b9;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    color: #fff;
+    transition: all 500ms;
+}
+
+.lista-padrao button:hover{
+ border: #2980b9 1px solid;
+ color: #2980b9;
+ background: transparent;
+}
+
+.img-padrao{
+    margin: 0 50px;
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    border-radius: 5px;
+}
+
+
+
+/* INICIO CORINHIANS */
+
+#mensagem_acertou_corinthians{
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.img-conrinhians {
+    background: url('../img/corint.jpg');
+}
+/* FIM CORINTHAINS */
+
+
+/* INICIO PALMEIRAS */
+.img-palmeiras{
+    background-image: url('../img/palmeiras-img-perfil.jpg');
+}
+
+#mensagem_acertou_palmeiras{
+    color: #27ae60;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  /* FIM PALMEIRAS */
+
+  /* INICO SAO PAULO  */
+.img-sao-paulo{
+    background-image: url('../img/sao-paulo-img-perfil.jpg');
+}
+
+
+#mensagem_acertou_sao_paulo{
+    color: #d63031;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+
+  /* FIM SAO PAULO */
+
+/* INICIO SANTOS */
+  .img-santos{
+    background-image: url('../img/santos-img-perfil.jpg');
+}
+
+#mensagem_acertou_santos{
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+/* FIM SANTOS */

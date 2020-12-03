@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="img/AllianzParque.jpg">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <span><a href="index.html"> Jogador Nato</a></span>
+        </div>
+        <div class="nav">
+            <a href="index.html"> <i class="fas fa-home"></i>home</a>
+            <a href="loja.html"> <i class="fas fa-store"></i>loja</a>
+        </div>
+        <div href="#" class="login">
+            <a href="login.html"> <i class="fas fa-user-circle"></i>login</a>
+        </div>
+    </div>
+    <!-- /* INICIO CAROUSEL PRINCIPAL  */ -->
+    <!--image slider start-->
+
+    <div class="container-slider">
+
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons end-->
+                <!--slide images start-->
+                <div class="container-text-slider">
+                    <div>
+                        <p>
+                            Sport - 2020
+                        </p>
+                    </div>
+                    <h1>Jogador Nato</h1>
+                </div>
+                <div class="slide first">
+                    <img src="img/slide1.jpg">
+                </div>
+                <div class="slide">
+                    <img src="img/slide2.jpg">
+                </div>
+                <div class="slide">
+                    <img
+                        src="img/slide3.jpg">
+                </div>
+                <div class="slide">
+                    <img
+                        src="img/slide4.jpg">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+    </div>
+
+
+
+    </div>
+    </div>
+    <!-- /* FIM CAROUSEL PRINCIPAL  */ -->
+
+    <!-- INICIO CONTENTE HOME -->
+    <div class="content-home">
+        <!-- /* INICIO CAROUSEL PARTIDAS DA RODADA */ -->
+        <div class="container-rodadas">
+            <!--     <h1>partidas da rodada</h1> -->
+            <div class="carousel-rodadas">
+
+                <div class="card-rodadas">
+                    <img src="img/carousel25.png">
+                    <div class="text-item">
+                        <h2>Corinthians x Santos</h2>
+                    </div>
+                </div>
+                <div class="card-rodadas">
+                    <img src="img/carousel22.jpg">
+
+                    <div class="text-item">
+                        <h2>Vasco x Flamengo</h2>
+                    </div>
+                </div>
+                <div class="card-rodadas">
+                    <img src="img/carousel23.png">
+                    <div class="text-item">
+                        <h2>Internacional x Atlético GO</h2>
+                    </div>
+                </div>
+                <div class="card-rodadas">
+                    <img src="img/carousel24.png">
+                    <div class="text-item">
+                        <h2>Cruzeiro x Palmeiras</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-video">
+            <video autoplay muted loop src="img/videosite.mp4"></video>
+        </div>
+
+        <!-- /* FIM CAROUSEL PARTIDAS DA RODADA */ -->
+
+        <!-- INICIO NOTICIAS -->
+        <div class="container-noticias">
+            <h1>Últimas Notícias</h1>
+            <div class="times-noticias">
+                <li><a href="#">Palmeiras</a></li>
+                <li><a href="#">Corinthians</a></li>
+                <li><a href="#">Santos</a></li>
+                <li><a href="#">São Paulo</a></li>
+            </div>
+            <div class="container-cards-noticias">
+                <img class="noticias-img-destaque" src="img/img15.jpg" >
+                <img class="noticias-img-1" src="img/img3.jpg">
+                <span class="noticias-text-span2">Praticar esporte ajuda a diminuir o estresse</span>
+                <span class="noticias-text-span2">Taça das Favelas 2020</span>
+                <img class="noticias-img-2" src="img/img16.jpg" >
+                <div class="noticias-text-span">Copa do Mundo 2022</div>
+                <span>Futebol melhora o humor e a disposição</span>
+                <img class="noticias-img-2" src="img/alomae.jpg" >
+                <img class="noticias-img-2" src="img/AllianzParque.jpg" >
+                <span>Abertura do novo estádio do Palmeiras</span>
+            </div>
+        </div>
+        <!-- FIM NOTICIAS -->
+
+        <!--INICIO CONTAINER CADASTRO -->
+        <div class="container-cadastro">
+            <h1>Cadastre-se</h1>
+            <img src="img/camisa10.png" >
+            <div class="box-cadastro">
+                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                    <input type="text" name="nome" class="input-padrao" autofocus="autofocus"
+                        placeholder="Nome completo" required minlength="4">
+                    <input type="text" name="login" class="input-padrao" placeholder="Usuário para login" required
+                        minlength="4">
+                    <input type="password" name="senha" class="input-padrao" placeholder="Senha" required minlength="4">
+                    <input placeholder="Confimação de Senha" class="input-senha" type="password">
+                    <button id="btn_entrar" class="btn-cadastrar">Cadastrar</button>
+                </form>
+            </div>
+            <!--FIM CONTAINER CADASTRO -->
+          
+        </div>
+       <div class="container-redes-sociais">
+            <a class="btn-redes-sociais" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn-redes-sociais" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="btn-redes-sociais" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="btn-redes-sociais" href="#"><i class="fab fa-youtube"></i></a>
+            <a class="btn-redes-sociais" href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <!-- FIM CONTENTE HOME -->
+</body>
+
+</html>
+<script src="js/slides.js"></script>
+<script src="js/cadastrar.js">
+
+
+    
+
+</script>

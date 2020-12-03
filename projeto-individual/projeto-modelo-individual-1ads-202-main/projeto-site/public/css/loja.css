@@ -1,0 +1,68 @@
+.card-loja{
+    height: 500px;
+    width: 300px;
+    border-right: #636e72 solid 1px;
+    border-bottom: #636e72 solid 1px;
+    /* border-left: #636e72 solid 1px; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-loja3{
+    border-right: none;
+}
+
+
+.container-loja{
+    width: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.card-loja img{
+    width: 300px;
+}
+
+.card-loja i{
+    color: #f1c40f;
+}
+.card-loja span{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    width: 100%;
+}
+.card-loja .text-frete{
+    color: #27ae60;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card-loja .valor-camisa{
+    color: #2d3436;
+    font-size: 20px;
+  font-weight: 700;
+}
+
+.card-loja input{
+ width: 100%;
+ text-align: center;
+margin-top: 5px;
+}
+
+.card-loja button{
+    margin: 5px 0;
+    width: 100%;
+    height: 30px;
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
