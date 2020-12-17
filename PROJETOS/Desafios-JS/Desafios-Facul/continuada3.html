@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+
+        <input placeholder="Quantidade de Dias" id="qt_dias">
+        <input placeholder="Quantidade de Horas" id="qt_horas">
+        <input placeholder="Quantidade de Minutos" id="qt_minutos">
+        <input placeholder="Nome Astronauta" id="nome_astronauta">
+        <br>
+        <button onclick="registrar_viagem()">Registrar Viagem</button>
+        <button onclick="relatorio_viagem()">Relátório de Viagens</button>
+        <div id="mensagem"></div>
+    </center>
+
+
+</body>
+
+</html>
+
+<script>
+    var todos_astraunautas = [];
+    var astronauta = {};
+
+    function registrar_viagem() {
+        var nome = nome_astronauta.value;
+        var dias = Number(qt_dias.value) > 0;
+        var horas = Number(qt_horas.value) > 0;
+        var minutos = Number(qt_minutos.value) > 0;
+
+        if (!dias && !horas && !minutos) {
+            alert("Informe um tempo de viagem válidos!");
+        } else {
+            astronauta = {
+                nome: nome,
+                dias: Number(qt_dias.value),
+                horas: Number(qt_horas.value),
+                minutos: Number(qt_minutos.value),
+            };
+            todos_astraunautas.push(astronauta);
+            qt_dias.value = "";
+            qt_horas.value = "";
+            qt_minutos.value = "";
+            nome_astronauta.value = "";
+        };
+    };
+
+    function relatorio_viagem() {
+        mensagem.innerHTML = "";
+        for (contador = 0; todos_astraunautas.length > contador; contador++) {
+            if (todos_astraunautas[contador].dias <= 360) {
+                mensagem.innerHTML += `Viagem: <b>${contador + 1}</b> <br>
+          Astronauta <b>${todos_astraunautas[contador].nome}</b> ficou fora por pelo menos <b>${todos_astraunautas[contador].dias}</b> dias no tempo da Terra.<br>
+          Como a pessoa estava quando ele chegou? <br><img src="bart-bebe.png"> <br><br><br><br>`;
+            } else if (todos_astraunautas[contador].dias >= 360 && todos_astraunautas[contador].dias <= 4680) {
+                mensagem.innerHTML += `Viagem: <b>${contador + 1}</b> <br>
+          Astronauta <b>${todos_astraunautas[contador].nome}</b> ficou fora por pelo menos <b>${todos_astraunautas[contador].dias}</b> dias no tempo da Terra.<br>
+          Como a pessoa estava quando ele chegou? <br><img src="bart-crianca.png"> <br><br><br><br>`;
+            } else if (todos_astraunautas[contador].dias >= 4680 && todos_astraunautas[contador].dias <= 10800) {
+                mensagem.innerHTML += `Viagem: <b>${contador + 1}</b> <br>
+          Astronauta <b>${todos_astraunautas[contador].nome}</b> ficou fora por pelo menos <b>${todos_astraunautas[contador].dias}</b> dias no tempo da Terra.<br>
+          Como a pessoa estava quando ele chegou? <br><img src="bart-adolescente.png"> <br><br><br>`;
+            } else if (todos_astraunautas[contador].dias > 10800 && todos_astraunautas[contador].dias <= 16200) {
+                mensagem.innerHTML += `Viagem: <b>${contador + 1}</b> <br>
+          Astronauta <b>${todos_astraunautas[contador].nome}</b> ficou fora por pelo menos <b>${todos_astraunautas[contador].dias}</b> dias no tempo da Terra.<br>
+          Como a pessoa estava quando ele chegou? <br><img src="bart-adulto.png"> <br><br><br>`;
+            } else if (todos_astraunautas[contador].dias > 16200 && todos_astraunautas[contador].dias <= 32400) {
+                mensagem.innerHTML += `Viagem: <b>${contador + 1}</b> <br>
+          Astronauta <b>${todos_astraunautas[contador].nome}</b> ficou fora por pelo menos <b>${todos_astraunautas[contador].dias}</b> dias no tempo da Terra.<br>
+          Como a pessoa estava quando ele chegou? <br><img src="bart-idoso.png"> <br><br><br>`;
+            } else {
+                mensagem.innerHTML += `Viagem: <b>${contador + 1}</b> <br>
+          Astronauta <b>${todos_astraunautas[contador].nome}</b> ficou fora por pelo menos <b>${todos_astraunautas[contador].dias}</b> dias no tempo da Terra.<br>
+          Como a pessoa estava quando ele chegou? <br><img src="bart-esqueleto.png"> <br><br><br>`;
+            };
+        };
+    };
+
+
+
+</script>
