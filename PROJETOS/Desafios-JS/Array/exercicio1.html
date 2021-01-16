@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <center>
+        <input placeholder="Insira um Filme" id="inp_filme">
+        <button onclick="cadastrarFilme()">Cadastrar Filme</button>
+        <input placeholder="Verificar Filme" id="inp_verificar">
+        <button onclick="verificarFilme()">Verificar Filme</button>
+    </center>
+
+</body>
+
+</html>
+
+<script>
+    
+    let filme = [];
+    function cadastrarFilme() {
+        filme.push(inp_filme.value);
+    };
+
+    function verificarFilme() {
+        filme.forEach((item, index, array) => {
+            if (item == inp_verificar.value) {
+                alert('Esse filme já está cadastrador!');
+            };
+        });
+    };
+
+</script>

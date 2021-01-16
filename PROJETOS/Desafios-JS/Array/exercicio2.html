@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <center>
+    <input onkeyup="inserir_palavra()" id="letra">
+    <div id="mensagem"></div>
+  </center>
+
+</body>
+
+</html>
+
+<script>
+
+  let Letra = [];
+  function inserir_palavra() {
+    mensagem.innerHTML = "";
+    Letra.push(letra.value);
+    letra.value = "";
+    for (let contador = 0; Letra.length > contador; contador++) {
+      mensagem.innerHTML += `${Letra[contador]}<br>`
+    };
+  };
+
+</script>

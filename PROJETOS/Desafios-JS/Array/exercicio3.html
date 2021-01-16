@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <center>
+    <input onkeyup="inserir_palavra()" id="letra">
+    <div id="mensagem"></div>
+  </center>
+
+</body>
+
+</html>
+
+<script>
+
+  let Letras = [];
+  let letra_adicionada;
+  function inserir_palavra() {
+    mensagem.innerHTML = '';
+    letra_adicionada = letra.value;
+    Letras.push(letra_adicionada.length -1);
+    for (let contador = Letras.length; contador >= Letras.length; contador--) {
+      mensagem.innerHTML += `${Letras[contador - 1]}<br>`;
+    };
+
+  };
+
+</script>
